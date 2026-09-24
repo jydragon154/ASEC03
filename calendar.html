@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>行事曆｜工程監造工作系統</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<style>
+    .calendar-section { margin: 2rem 0; }
+    .calendar-table th { background: #5b3a29; color: #fff; position:sticky; top:0; }
+    .calendar-table td { padding: 0.5rem 0.75rem; vertical-align: top; }
+    .event-tag { display:inline-block; padding:2px 8px; border-radius:12px; font-size:0.78rem; font-weight:600; margin-right:4px; white-space:nowrap; }
+    .tag-qc { background:#e7d8c6; color:#5b3a29; }
+    .tag-progress { background:#cce5ff; color:#004085; }
+    .tag-inspect { background:#fff3cd; color:#856404; }
+    .tag-inspect-work { background:#ff8f00; color:#fff; border:2px solid #e65100; font-weight:700; padding:3px 10px; box-shadow:0 1px 3px rgba(230,81,0,0.25); }
+    .tag-schedule { background:#f8d7da; color:#721c24; }
+    .tag-selfcheck { background:#e2d9f3; color:#3d1f7c; }
+    .tag-mat-sample { background:#d1ecf1; color:#0c5460; }
+    .tag-mat-entry { background:#bee5eb; color:#0c5460; }
+    .tag-nonconform { background:#f5c6cb; color:#721c24; }
+    .tag-oversight { background:#ffe0b2; color:#5d4037; }
+    .tag-safety { background:#e7d8c6; color:#5b3a29; }
+    .tag-general { background:#e9ecef; color:#495057; }
+    .tag.ok { background:#e7d8c6; color:#5b3a29; padding:2px 8px; border-radius:10px; font-size:0.78rem; font-weight:600; }
+    .tag.warn { background:#fff3cd; color:#856404; padding:2px 8px; border-radius:10px; font-size:0.78rem; font-weight:600; }
+    .tag.info { background:#cce5ff; color:#004085; padding:2px 8px; border-radius:10px; font-size:0.78rem; font-weight:600; }
+    .calendar-wrap { max-height:600px; overflow-y:auto; border:1px solid #d9c5b0; border-radius:6px; }
+    .filter-bar { display:flex; gap:0.5rem; flex-wrap:wrap; margin:0.5rem 0 1rem; font-size:0.85rem; }
+    .filter-bar .fchip { background:#f3ece3; border:1px solid #d9c5b0; padding:4px 10px; border-radius:12px; }
+    .filter-bar .fchip strong { color:#5b3a29; }
+    .calendar-table th.date-col { min-width:110px; white-space:nowrap; }
+    .calendar-table th.cal-status-col, .calendar-table td.cal-status-col { min-width:80px; white-space:nowrap; text-align:center; }
+    .calendar-table .tag { white-space:nowrap; }
+  </style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<div class="badge">V2.0｜更新日期：2026/09/23</div>
+<h1>工程監造工作系統</h1>
+<p class="subtitle">115、116年度谷關七雄、德芙蘭及桃山步道牌誌更新改善工程 — 監造工作統一入口</p>
+</div>
+</header>
+<nav>
+<div class="nav-inner">
+<a href="index.html">首頁</a>
+<a href="calendar.html">行事曆</a>
+<a href="workflow.html">工程概要及進度</a>
+<a href="quality.html">材料品質管理</a>
+<a href="construction-quality.html">施工品質管理</a>
+<a href="safety.html">施工安全衛生</a>
+<a href="downloads.html">施工照片／更新紀錄</a>
+</div>
+</nav>
+<main>
+<h2 class="section-title">行事曆</h2>
+<p style="color:#555; margin-bottom:0.5rem;">依「行事曆」分頁彙整事件共 19 筆（資料統計至 115年9月15日）。</p>
+<div class="filter-bar">
+<span class="fchip">三級品管 <strong>5</strong></span>
+<span class="fchip">工期 <strong>3</strong></span>
+<span class="fchip">材料送審 <strong>3</strong></span>
+<span class="fchip">保險 <strong>3</strong></span>
+<span class="fchip">報表 <strong>2</strong></span>
+<span class="fchip">行政公文 <strong>1</strong></span>
+<span class="fchip">契約 <strong>1</strong></span>
+<span class="fchip">進度統計 <strong>1</strong></span>
+</div>
+<div class="calendar-section">
+<div class="calendar-wrap">
+<table class="calendar-table">
+<thead>
+<tr><th class="date-col">日期</th><th>事件類別</th><th>事件內容</th><th>位置</th><th class="cal-status-col">狀態</th></tr>
+</thead>
+<tbody>
+<tr><td>115/06/12</td><td><span class="event-tag tag-qc">三級品管</span></td><td>監造計畫提送（艾字第1150500002號）</td><td>監造單位</td><td class="cal-status-col"><span class="tag ok">已合格</span></td></tr>
+<tr><td>115/07/13</td><td><span class="event-tag tag-qc">三級品管</span></td><td>監造計畫核定（中育字第1153340942號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已核定</span></td></tr>
+<tr><td>115/07/16</td><td><span class="event-tag tag-oversight">行政公文</span></td><td>函請依監造計畫及契約規範執行（中育字第1153340957號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已發文</span></td></tr>
+<tr><td>115/07/21</td><td><span class="event-tag tag-schedule">工期</span></td><td>廠商申報開工報告（彩字第1150001052號）</td><td>施工廠商</td><td class="cal-status-col"><span class="tag ok">已提送</span></td></tr>
+<tr><td>115/07/22</td><td><span class="event-tag tag-qc">三級品管</span></td><td>廠商檢送品質計畫及施工計畫（彩字第1150001053號）</td><td>施工廠商</td><td class="cal-status-col"><span class="tag ok">已提送</span></td></tr>
+<tr><td>115/07/23</td><td><span class="event-tag tag-qc">三級品管</span></td><td>審查開工報告及品質計畫轉陳分署（艾字第1150500003/4號）</td><td>監造單位</td><td class="cal-status-col"><span class="tag ok">已審查</span></td></tr>
+<tr><td>115/07/27</td><td><span class="event-tag tag-schedule">工期</span></td><td>正式開工</td><td>谷關七雄、德芙蘭及桃山步道</td><td class="cal-status-col"><span class="tag info">進行中</span></td></tr>
+<tr><td>115/07/28</td><td><span class="event-tag tag-schedule">工期</span></td><td>開工報告核定（中育字第1153104081號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已核定</span></td></tr>
+<tr><td>115/07/28</td><td><span class="event-tag tag-general">契約</span></td><td>檢送工程契約書（中育字第1153341018號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已備查</span></td></tr>
+<tr><td>115/07/28</td><td><span class="event-tag tag-qc">三級品管</span></td><td>施工及品質計畫核定（中育字第1153104082號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已核定</span></td></tr>
+<tr><td>115/08/03</td><td><span class="event-tag tag-safety">保險</span></td><td>廠商檢送工程保險單（彩字第1150001058號）</td><td>施工廠商</td><td class="cal-status-col"><span class="tag ok">已提送</span></td></tr>
+<tr><td>115/08/03</td><td><span class="event-tag tag-progress">報表</span></td><td>提送115.7下半月工程半月報及監造報表（艾字第1150500005號）</td><td>監造單位</td><td class="cal-status-col"><span class="tag ok">已提送</span></td></tr>
+<tr><td>115/08/04</td><td><span class="event-tag tag-progress">報表</span></td><td>同意備查115.7下半月工程報表及監造報表（中育字第1153104257號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已備查</span></td></tr>
+<tr><td>115/08/07</td><td><span class="event-tag tag-mat-entry">材料送審</span></td><td>廠商檢送太平洋鐵木等材料送審資料（彩字第1150001059號）</td><td>施工廠商</td><td class="cal-status-col"><span class="tag ok">已提送</span></td></tr>
+<tr><td>115/08/07</td><td><span class="event-tag tag-safety">保險</span></td><td>審轉工程保險單（艾字第1150500006號）</td><td>監造單位</td><td class="cal-status-col"><span class="tag ok">已審查</span></td></tr>
+<tr><td>115/08/10</td><td><span class="event-tag tag-mat-entry">材料送審</span></td><td>審查材料送審符合規定轉陳分署（艾字第1150500007號）</td><td>監造單位</td><td class="cal-status-col"><span class="tag ok">已審查</span></td></tr>
+<tr><td>115/08/13</td><td><span class="event-tag tag-safety">保險</span></td><td>工程保險單審查無誤同意核備（中育字第1153104366號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已核備</span></td></tr>
+<tr><td>115/08/15</td><td><span class="event-tag tag-inspect">進度統計</span></td><td>監造報表統計日（第19天，預定4.22%，實際4.29%）</td><td>工地現場</td><td class="cal-status-col"><span class="tag ok">已統計</span></td></tr>
+<tr><td>115/08/18</td><td><span class="event-tag tag-mat-entry">材料送審</span></td><td>准予核定太平洋鐵木等材料送審資料（中育字第1153104427號）</td><td>主辦機關</td><td class="cal-status-col"><span class="tag ok">已核定</span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<footer>
+<div class="footer-inner">
+<strong>工程監造工作系統</strong><br/>
+    本網站為工程監造內部工作資料平台第二版，實際表單、規範與作業程序仍應依契約、核定計畫、主管機關規定及最新法規辦理。
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
